@@ -15,7 +15,7 @@ body {
   /* justify-content: center;
     align-items: center; */
 
-  padding-top: 20%;
+  /* padding-top: 20%; */
   padding-bottom: 20%;
 }
 
@@ -63,15 +63,30 @@ p {
   align-items: center;
 }
 
+button {
+  border: none;
+  outline: none;
+  background: none;
+  z-index: 999;
+  cursor: pointer;
+}
+
 .sort-button {
   width: 25px;
   height: 15px;
 }
 
 .sort-btn {
-  padding-left: 83%;
+  /* width: 25px;
+  height: 15px; */
+  /* background: url(/assets/Images/asc_img.png) no-repeat; */
+  margin-left: 78%;
   padding-bottom: 10px;
 }
+
+/* .sort-button:hover {
+  background: url(/assets/Images/asc-hover.png) no-repeat;
+} */
 
 .todolist {
   /* padding-bottom: 18px; */
@@ -102,14 +117,6 @@ p {
   line-height: 16px;
 }
 
-button {
-  border: none;
-  outline: none;
-  background: none;
-  z-index: 999;
-  cursor: pointer;
-}
-
 .delete-button {
   width: 20px;
   height: 20px;
@@ -118,9 +125,10 @@ button {
   padding-right: 5%;
 }
 
-.delete-button:hover{
+.delete-button:hover {
   background-color: #833ae0;
-  border-radius: 53%;
+  border-radius: 55%;
+  overflow: hidden;
 }
 
 .add-section {
