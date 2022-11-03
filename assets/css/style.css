@@ -79,13 +79,13 @@ button {
 .sort-btn {
   /* width: 25px;
   height: 15px; */
-  /* background: url(/assets/Images/asc_img.png) no-repeat; */
+  /* background: url(./assets/Images/asc_img.png) no-repeat; */
   margin-left: 78%;
   padding-bottom: 10px;
 }
 
 /* .sort-button:hover {
-  background: url(/assets/Images/asc-hover.png) no-repeat;
+  background: url(./assets/Images/asc-hover.png) no-repeat;
 } */
 
 .todolist {
@@ -103,6 +103,20 @@ button {
 
   display: flex;
   align-items: center;
+}
+
+.input-section:not(:last-child)::after {
+  position: absolute;
+  background-color: lightgray;
+  height: 1px;
+  width: 250px;
+  margin-left: 7px;
+  margin-top: 35px;
+  content: "";
+}
+
+input:focus {
+  outline: none;
 }
 
 .input-context {
@@ -158,4 +172,10 @@ button {
 .add {
   width: 129px;
   height: 42px;
+}
+
+
+.draggable {
+  cursor: move;
+  user-select: none;
 }
